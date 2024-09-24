@@ -1,0 +1,117 @@
+---
+title: "Interactive Quarto Presentation"
+format: 
+  revealjs:
+    css: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+    include-in-header:
+      - text: |
+          <link href="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.css" rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+jupyter: python3
+---
+
+## Introduction
+
+Welcome to this interactive Quarto presentation!
+
+## String Doubler {.smaller}
+
+```{python}
+#| echo: false
+from IPython.display import display, HTML
+import ipywidgets as widgets
+from ipywidgets.embed import embed_minimal_html
+
+from loguru import logger
+logger.add("logfile.log", level="INFO")
+import json
+
+input_widget = widgets.Text(description="Enter text:")
+output_widget = widgets.Output(description="fn(input):")
+
+
+def double_string(mystr):
+    return mystr + mystr
+
+def on_input_change(change: dict):
+  new_value = change['new']
+  logger.info(f"{change=}")
+  with output_widget:
+    # output_widget
+    result = double_string(change['new'])
+    print(f"(print) Doubled string: {result}")
+  with print_output_widget:
+    print_output_widget.clear_output()
+    print(f"(captured print) Doubled string: {result}")
+  return result
+
+
+
+display(HTML("<h3>Input:</h3>"))
+display(input_widget)
+display(HTML("<h3>Output:</h3>"))
+display(output_widget)
+display(HTML("<h3>Captured Print Output:</h3>"))
+print_output_widget = widgets.Output()
+display(print_output_widget)
+
+
+def on_input_submit(sender):
+  new_value = sender.value
+  logger.info(f"Input submitted: {new_value}")
+  with output_widget:
+    output_widget.clear_output()
+    result = double_string(new_value)
+    print(f"output widget::\n Doubled string: {result}")
+  with print_output_widget:
+    print_output_widget.clear_output()
+    print(f"(captured print) Doubled string: {result}")
+  return result
+
+input_widget.on_submit(on_input_submit)
+
+
+# Embed the widgets into the HTML
+embed_minimal_html('export.html', views=[input_widget, output_widget], title="String Doubler")
+
+display(HTML('<iframe src="export.html" width="100%" height="300px"></iframe>'))
+```
+
+
+## Responsive Plot
+
+```{python}
+#| echo: false
+#| output: asis
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+#Input text determines number of points
+input_widget = widgets.Text(description="Enter number of points:")
+output_widget = widgets.Output(description="Plot:")
+
+def on_input_submit(sender):
+    num_points = int(sender.value)
+    logger.info(f"Input submitted: {num_points}")
+    with output_widget:
+        output_widget.clear_output()
+        x = np.linspace(0, 10, num_points)
+        y = np.sin(x)
+        plt.plot(x, y)
+        plt.show()
+    return num_points
+
+input_widget.on_submit(on_input_submit)
+
+display(HTML("<h3>Input:</h3>"))
+display(input_widget)
+display(HTML("<h3>Output:</h3>"))
+display(output_widget)
+
+
+```
+
+## Acknowledgments
+
+Thank you for attending this presentation!
