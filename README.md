@@ -36,3 +36,14 @@ is organized into the following Demos
 ### demo2
 
 
+
+
+# Notes
+
+## Quarto
+
+### html
+can embed mercury html otuput in any website.   
+```html
+<iframe src="pathogen-exec2fig-merc.html" width="100%" height="600px"></iframe>
+```

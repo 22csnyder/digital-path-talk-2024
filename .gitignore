@@ -1,10 +1,11 @@
-#ignore env
+yy#ignore env
 .env
 .reference/
 
 # Ignore Quarto libraries
 # quarto/presentation_files/libs/
 */presentation_files/libs/
+**libs/
 
 # Ignore log files
 *.log

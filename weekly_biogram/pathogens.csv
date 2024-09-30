@@ -1,0 +1,15 @@
+Pathogen,Number Positives,Number Tests,Positivity,Trend,4 Wk Avg
+Adenovirus,12,1299,0.92%,down,1.13%
+[Grouped] Seasonal Coronavirus,14,1326,1.06%,up,0.91%
+COVID-19,261,2678,9.75%,down,13.09%
+Metapneumovirus,0,1298,0.0%,same,0.18%
+[Grouped] Influenza A Subtypes,3,2424,0.12%,down,0.23%
+Influenza B,0,2424,0.0%,same,0.0%
+[Grouped] Parainfluenza Virus,23,1326,1.73%,up,1.34%
+Rhinovirus/Enterovirus,277,1298,21.34%,same,19.6%
+RSV,9,2424,0.37%,up,0.27%
+Bordetella pertussis,1,1257,0.08%,same,0.18%
+Bordetella parapertussis,0,1257,0.0%,same,0.0%
+Chlamydia pneumoniae,0,1298,0.0%,same,0.0%
+Mycoplasma pneumoniae,18,1307,1.38%,same,1.49%
+

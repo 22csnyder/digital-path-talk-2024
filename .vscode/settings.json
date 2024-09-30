@@ -1,0 +1,20 @@
+{
+    "editor.experimentalInlineEdit.fontFamily": "Lumberjack inline",
+    "editor.screenReaderAnnounceInlineSuggestion": false,
+    "emmet.useInlineCompletions": false,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "python.analysis.disableTaggedHints": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "editor.defaultFormatter": "anysphere.pyright",
+    "notebook.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "notebook.formatOnSave.enabled": true,
+    "black-formatter.importStrategy": "fromEnvironment",
+    "python.analysis.autoFormatStrings": true,
+    "pylint.importStrategy": "fromEnvironment",
+    "editor.defaultFoldingRangeProvider": "anysphere.pyright"
+}

@@ -1,0 +1,160 @@
+---
+title: "Empowering Medical Professionals" 
+# : Leveraging GPT Models for Informatics Solutions"
+subtitle: "Leveraging GPT Models for Informatics Solutions"
+author: "Christopher Snyder, MD, PhD"
+date: "2024-10-02"
+format: revealjs
+
+slide-number: true
+
+---
+
+## 
+<!-- (cme slide) -->
+\< Insert CME Slide Here >
+
+## Big Claims are Being Made about AI
+
+
+<!-- ![AI Conceptual Image](ai-conceptual.jpg) -->
+::: {.columns}
+::: {.column width="50%"}
+- most transformative technology since industrialization
+- "Self-improving AI" - "Singularity"
+- potential to "transform healthcare"
+:::
+
+::: {.column width="50%"}
+![](src/ai-conceptual.jpg)
+:::
+:::
+
+## Prophecies are Rarely Actionable
+- What should I do differently?
+  - "now" even less clear than "later"
+![](src/ai-clueless.avif)
+- Is it "too early" to pay attention?
+
+## Little Evidence to Inform Preparation
+::: {.columns}
+::: {.column width="50%"}
+##### What is the best approach?
+- to date, business as usual
+- maybe "wait and see"
+  - conservative ≠ safe
+
+:::
+
+::: {.column width="50%"}
+![ai tidal wave](src/ai-tidalwave.webp)
+
+:::
+:::
+
+
+## Objectives
+
+1. Introduce "Computers that Know What You Mean" as an **existing** and transformative AI technology
+
+    2. Highlight being "Conversant" in Computing as a natural extension of language, literacy, or teamwork.
+
+2. Provide examples of how "Computers that Know What You Mean" can empower non-technical users to develop informatics solutions with minimal effort.
+
+3. Demonstrate the impact of "Computers that Know What You Mean" on the relationship between computers and humans, essentially allowing for **computers that do what you want**.
+
+4. Provide recommendations for how medical informatics professionals, and systems of professionals can best leverage this transformative technology in their work.
+
+
+## Computers usually *don't* always* know what you mean
+
+::: {.columns}
+::: {.column width="50%"}
+```python
+dff=pd.read_sql(
+  f""" SELECT *
+        FROM results
+        WHERE {ASSAY} == "{task_assay}"
+        AND {CONTROL_MATERIAL} == "{control_material}"
+        AND {STATUS} not in {bad_result_status}
+        AND {PERFORMED_TIMESTAMP} > '{start_date}'
+  """,conn)
+```
+- precise syntax required
+
+:::
+
+::: {.column width="50%"}
+
+
+```bash
+# Compress a file
+tar -czvf file.tar.gz file
+
+#show port forwards
+netsh interface portproxy show v4tov4
+
+#mount a network drive
+mount -t drvfs /mnt/Box
+```
+- memorized(?) incantations
+
+:::
+![](src/xkcd_terminal.webp)
+
+:::
+
+## Gene Panels, Spot the Difference
+<!-- ## Computers that *do* know what you mean -->
+<!-- ### Me, on Molecular Call -->
+<!-- Spot the Difference -->
+<!-- https://chatgpt.com/share/66f2e625-ab44-8005-a883-686a92017a51 -->
+
+![](src/gene-panels-03.png){width="30%"}
+
+![](src/gene-panels-02.png){.r-stretch}
+
+## Gene Panels, Spot the Difference
+
+::: {.columns}
+::: {.column width="25%"}
+[chatgpt thread](https://chatgpt.com/share/66f2e625-ab44-8005-a883-686a92017a51)
+
+#### what I said vs what I meant
+:::
+::: {.column width="75%"}
+![](src/gene-panels-01.png)
+:::
+:::
+
+## "Just Autocomplete"
+#### [A Slippery Slope]{style="color: blue;"}
+
+|                       |                                                        |
+|-------------------------------|-------------------------------------------------------------------|
+| **Text** Autocomplete         | → next word                                                        |
+| **Language** Translation      | <X> in Spanish would be →                                          |
+| **Information** Transformation| - data representation <-> (img, txt, code.py)                      |
+|                               | - board material → podcast discussing it             |
+| **Instruction** Implementation| goal <-> code achieving goal                                       |
+
+# WUSTL Weekly Biogram Report Analysis
+data from [https://diorama.wustl.edu/weekly-report](https://diorama.wustl.edu/weekly-report)
+
+## Weekly WUSTL Biogram
+![](src/biogram-01.png)
+
+## LLM-Driven Data Slicing (1/3)
+![](src/biogram-alldata.png)
+
+## LLM-Driven Slicing (2/3)
+![](src/biogram-justviruses.png)
+
+## LLM-Driven Slicing (3/3)
+![](src/biogram-gettingworse.png)
+
+## LLM-Driven Data (?)Dicing
+![](src/biogram-piegraph.png)
+
+# Stepping Back
+
