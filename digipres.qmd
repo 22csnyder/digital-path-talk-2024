@@ -1,14 +1,20 @@
 ---
 title: "Empowering Medical Professionals" 
-# : Leveraging GPT Models for Informatics Solutions"
 subtitle: "Leveraging GPT Models for Informatics Solutions"
 author: "Christopher Snyder, MD, PhD"
 date: "2024-10-02"
-format: revealjs
-
 slide-number: true
-
+format: 
+  revealjs:
+    css: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+    include-in-header:
+      - text: |
+          <link href="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.css" rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+jupyter: python3
 ---
+
+<!-- # ipynb-shell-interactivity: all -->
 
 ## 
 <!-- (cme slide) -->
@@ -156,5 +162,405 @@ data from [https://diorama.wustl.edu/weekly-report](https://diorama.wustl.edu/we
 ## LLM-Driven Data (?)Dicing
 ![](src/biogram-piegraph.png)
 
-# Stepping Back
+
+
+# Intermission
+## Progress Outline
+- [x] Introduction to "Computers that Know What You Mean"
+  - technical barrier ~ asking a friend for a favor
+- [ ] Why would anyone want to "talk to computers"?
+- [ ] Overview of current tools and methologies
+- [ ] Example walkthrough of a simple informatics task
+- [ ] Recommendations for leveraging this and future transformative technologies
+
+
+# Why Should I Talk to Computers? How is that empowering?
+
+## Communication Critical for Humans
+::: {.columns}
+::: {.column width="50%"}
+- Children Universally Geared toward learning language
+- Why?
+  - tool for learning
+  - exploring feasibility
+  - coordinating resources
+  - accomplishing goals
+:::
+
+::: {.column width="50%"}
+![Charlie ~ 6 weeks](src/language/charlie01.png)
+
+:::
+:::
+
+
+## Communication Critical in the Workplace
+::: {.columns}
+::: {.column width="50%"}
+- Doctors - Patient Bedside
+  <!-- - Describing symptoms -->
+  <!-- - Understanding treatment options -->
+- Multi-Diciplinary Care Teams
+  <!-- - Discussing prognosis -->
+  <!-- - Coordinating care -->
+- Blood Bank
+  <!-- - Requires >1 person -->
+:::
+
+::: {.column width="50%"}
+
+<!-- ![](src/language/meeting.webp) -->
+![](src/language/meeting_skinny.png)
+
+:::
+:::
+
+
+## Communication is Empowering
+|
+|
+
+<!-- |--------------------|------------------------| -->
+| Benefit            | Communication Example                                                                                                                                                                                |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Economies of Scope   | - Children enlisting adults<br>- Multi-disciplinary care teams<br>[- **Using Computers...**]{.fragment fragment-index=1} [  **learning from data**]{.fragment fragment-index=1}                  |
+| Economies of Scale   | - Children working together<br>- Staffing pathology services<br>- Resident scheduling<br>[- **Using Computers...**]{.fragment fragment-index=2} [ **automating tasks**]{.fragment fragment-index=2} |
+
+
+## Communication Key to Efficiency 
+
+* *inefficiency*: gap between "knowing what to do" and "being done"
+* inefficiency can be reduced by communication with peers
+
+* Example: HMA (Hematologic Malignancy Algorithm)
+  * extensive communication in advance with oncologists
+  * streamlines adding molecular testing once indicated
+  <!-- [hma algorithm](src/language/hma.png) -->
+* Many inefficiencies are amenable to an informatics solution
+  * however, often "the juice isn't worth the squeeze"
+
+* By lowering the barrier working with computers, and by expanding the pool of practitioners who can do so, AI stands to  remove essentially all present workflow inefficiencies
+  * everything is worth the squeeze when you have a juicer
+
+
+
+# Overview of Current Tools / Computer-Communication Aids
+
+## AI Tools For Computer Use
+
+:::notes
+these are my notes 
+:::
+0. task to code (by hand)
+
+1. task as prompt
+
+2. task to code
+
+3. code as prompt
+
+![](src/tools/aitools-flowchart-byhand.png){width=100%}
+
+## Running Data Example: UDS Parse{.scrollable}
+### Task: parse UDS screen results for positive patient+drugs resulted
+
+SCREEN_RESULT_COMMENT
+
+"The following compounds were detected: 
+
+Tetrahydrocannabinol (THC)
+
+Repeated and verified.
+Medical Director review to follow."
+"The following compounds were detected: 
+
+Tetrahydrocannabinol (THC)
+
+Repeated and verified.
+Medical Director review to follow."
+
+"The following compounds were detected:  
+Benzoylecgonine (BEG)
+Fentanyl
+Tramadol
+O-Desmethyl tramadol
+Repeated and verified.
+Medical Director review to follow."
+
+"The following compounds were detected: 
+
+Amphetamine
+Methamphetamine
+Alprazolam (Xanax)
+Lorazepam-glucuronide
+
+Repeated and verified.
+Medical Director review to follow."
+
+"The following compounds were detected: 
+
+Morphine
+Morphine-3-glucuronide
+Fentanyl
+
+Repeated and verified.
+Medical Director review to follow."
+"The following compounds were detected:  
+
+Tetrahydrocannabinol (THC),
+
+Repeated and verified.
+Medical Director review to follow."
+"The following compounds were detected:  
+
+Oxycodone,  
+
+Repeated and verified.
+Medical Director review to follow."
+
+"The following compounds were detected: 
+
+Amphetamine
+
+Methamphetamine
+.
+.
+.
+
+## 1. Task as Prompt
+::: {.columns}
+::: {.column width="50%"}
+- try [chatgpt](https://chatgpt.com/share/66faa53f-91fc-8005-b9a6-243465db3d1d) directly
+- clearly feasible
+- difficult to specify what I mean precisely enough 
+:::
+
+::: {.column width="50%"}
+![caption: screenshot of thread with chatgpt](src/tools/uds-chatgpt-01.png)
+:::
+:::
+
+## 0. Task to Code (by hand)
+
+<!-- ```{python} -->
+#### code to parse UDS screen results for positive patient+drugs
+
+``` {.python code-line-numbers=3-5|11|1-100}
+def parse_section(section: str) -> list[str]:
+    """Parses a section of the screen result for detected compounds."""
+    start = section.find("detected:")
+    end = section.rfind("Repeated")
+    lines = section[start + len("detected:") : end].strip().split("\n")
+    compounds = [l.strip() for l in lines if l.strip()]
+    return compounds
+
+results_file = Path( "screen_result.txt" )
+result_text = results_file.read_text()
+sections = result_text.split('"')[1::2]
+parsed_sections = [parse_section(section) for section in sections]
+print(*parsed_sections, sep='\n--------------------\n')
+```
+#### !"overly specific", hyper granular, brittle
+```text{.scrollable}
+['Tetrahydrocannabinol (THC)']
+--------------------
+['Tetrahydrocannabinol (THC)']
+--------------------
+['Benzoylecgonine (BEG)', 'Fentanyl', 'Tramadol', 'O-Desmethyl tramadol']
+--------------------
+['Amphetamine', 'Methamphetamine', 'Alprazolam (Xanax)', 'Lorazepam-glucuronide']
+--------------------
+['Morphine', 'Morphine-3-glucuronide', 'Fentanyl']
+--------------------
+['Tetrahydrocannabinol (THC),']
+--------------------
+['Oxycodone,']
+--------------------
+['Amphetamine', 'Methamphetamine']
+--------------------
+['Amphetamine', 'Methamphetamine']
+--------------------
+['Cocaine', 'Benzoylecgonine (BEG)', 'Fentanyl', 'Ketamine']
+--------------------
+['Nordiazepam,']
+--------------------
+['Oxycodone', 'Lorazepam-glucuronide', 'Tetrahydrocannabinol (THC)', 'Fentanyl']
+--------------------
+['Methadone', 'Fentanyl']
+--------------------
+['Tetrahydrocannabinol (THC)', 'Fentanyl']
+--------------------
+['Tetrahydrocannabinol (THC)']
+--------------------
+['Hydrocodone']
+--------------------
+['Oxycodone']
+--------------------
+['Methadone,', 'EDDP (Methadone Metabolite),', 'Fentanyl,']
+--------------------
+['Tetrahydrocannabinol (THC),']
+--------------------
+['Amphetamine,']
+--------------------
+['Benzoylecgonine (BEG)', 'Tetrahydrocannabinol (THC)']
+--------------------
+['Methadone', 'EDDP (Methadone Metabolite)', 'Fentanyl']
+--------------------
+['Tetrahydrocannabinol (THC)', 'Oxycodone', 'Hydrocodone']
+--------------------
+['Methadone', 'EDDP (Methadone Metabolite)', 'Bupropion', 'Hydroxy-bupropion']
+--------------------
+['Tetrahydrocannabinol (THC)']
+--------------------
+['owing compounds were detected', 'Tetrahydrocannabinol (THC)']
+--------------------
+['7-aminoclonazepam']
+--------------------
+['Amphetamine,', 'Methamphetamine,', 'Tetrahydrocannabinol (THC),', 'Oxycodone']
+--------------------
+['Methamphetamine']
+--------------------
+['Amphetamine,', 'Methamphetamine,', 'Morphine,', 'Morphine-3-glucuronide']
+--------------------
+['Amphetamine']
+--------------------
+['Venlafaxine(Effexor)']
+--------------------
+['Cocaine,', 'Benzoylecgonine (BEG),', 'Oxycodone,', 'Fentanyl']
+--------------------
+['Benzoylecgonine (BEG),', 'Tetrahydrocannabinol (THC),', 'Methadone,', 'EDDP (Methadone Metabolite),', 'Fentanyl']
+--------------------
+['Amphetamine,', 'Methamphetamine']
+--------------------
+['Amphetamine,', 'Methamphetamine']
+--------------------
+['Lorazepam-glucuronide.']
+--------------------
+['Benzoylecgonine (BEG)']
+--------------------
+['Lorazepam-glucuronide.']
+--------------------
+['Methylphenidate (Ritalin)']
+--------------------
+['Lorazepam-glucuronide.']
+--------------------
+['Clonidine']
+--------------------
+['Tetrahydrocannabinol (THC)', 'Norbuprenorphine']
+--------------------
+['7-aminoclonazepam']
+```
+
+## 2. Task to Code
+
+uds_parse/drugscreen_result_parsing.ipynb
+
+![](src/tools/uds-chatgpt-code-02b.png)
+
+
+## 3. Code as Prompt
+
+![Coding without Rigid Rules](src/tools/uds-marvin-03.png)
+
+[chatgpt thread](https://chatgpt.com/c/66faa511-42c4-8005-86c0-ae32a866b1b3){preview-link="true" style="text-align: center"}
+
+
+
+
+## AI Tools For Computer Use (summary)
+
+:::notes
+these are my notes 
+:::
+0. task to code (by hand)
+  - tedious, "too literal": always requires 100% specification
+
+1. task as prompt
+  - easy, difficult to specify what you mean precisely enough
+
+2. task to code
+  - Can jumpstart coding, modifying easier than writing
+
+3. code as prompt
+  - sweet spot: clearly specifies what you want the output to "look like" while leaving the details to the model
+
+![](src/tools/aitools-flowchart-byhand.png){width=100%}
+
+
+# Quick Development of Informatic Solutions
+
+## Flow lab dashboard
+
+## Txfsn Service AI Assistant
+
+
+# Recommendations
+
+
+<!-- ## Pursuit Angle -->
+## AI Recommendations Frameworks{.smaller}
+::: {.columns}
+::: {.column width="33%"}
+### Tactical
+- update specific lectures
+- add an elective
+:::
+
+::: {.column width="33%"}
+### Operational
+- gpt-playground
+- reward innovation by staff
+:::
+
+::: {.column width="33%"}
+### Grand-Strategic
+- How to cope with change that is accelerating?
+- What short term targets keep us relevant in the long-term?
+:::
+:::
+
+
+##
+
+<!-- ["Beast Mode"](src/pusuit_angle/BeastQuake720p.mp4) -->
+
+<video width="100%" height="auto" controls>
+  <source src="src/pusuit_angle/BeastQuake720p.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+##
+
+![Alt text](src/pusuit_angle/ss_before.png)
+
+
+## 
+
+![Alt text](src/pusuit_angle/ss_after.png)
+
+
+## 
+
+![Alt text](src/pusuit_angle/ss_directly-chasing-the-ball.png)
+
+##
+
+
+![Alt text](src/pusuit_angle/ss_slower-adopters-must-plan-farther-ahead.png)
+
+
+## Core Recommendation
+
+
+We should prepare for the future like it's already here. 
+And, by the time we are ready, it will be. 
+
+It is exactly because medicine will have the most obstacles to AI adoption that we need to plan the farthest ahead. 
+
+
+## Specific Recommendations
+
+
+## Conclusions
+
 
