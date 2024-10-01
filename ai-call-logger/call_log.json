@@ -1,24 +1,74 @@
-{
-    "service": "Chemistry",
-    "patient": {
-        "last_name": "marshall",
-        "first_name": "frank george",
-        "dob": "1977-03-01T00:00:00Z",
-        "mrn": 242317722,
-        "sex": null,
-        "age": null
+[
+    {
+        "service": "Chemistry",
+        "patient": {
+            "last_name": "marshall",
+            "first_name": "frank george",
+            "dob": "1977-03-01T00:00:00Z",
+            "mrn": 242317722,
+            "sex": null,
+            "age": null
+        },
+        "caller": {
+            "last_name": "halsey",
+            "first_name": "bill",
+            "callback_number": "",
+            "clinical_service": "Neurology",
+            "attending_doctor": null,
+            "caller_details": "medical student on the general neuroservice"
+        },
+        "laboratory_test": "FGQ1B antibody",
+        "call_category": "Lab Problem",
+        "call_details": "This patient had a serum sample sent to Mayo three days ago and since then has had plasmapheresis and we'd like to test the FGQ1B antibody on serum. We're having trouble because we did plasmapheresis and now we can't detect the antibody so we're looking for an old sample. We're wondering if either we in the lab at BGH have a sample or at Mayo they have a sample we could add on or send to Mayo to get the FGQ1B antibody.",
+        "specimen_type": "serum",
+        "resolution": "New"
     },
-    "caller": {
-        "last_name": "halsey",
-        "first_name": "bill",
-        "callback_number": "",
-        "clinical_service": "Neurology",
-        "attending_doctor": null,
-        "caller_details": "medical student on the general neuroservice"
+    {
+        "service": "Chemistry",
+        "patient": {
+            "last_name": "snyder",
+            "first_name": "charlie",
+            "dob": "1995-05-18T00:00:00",
+            "mrn": 2904624,
+            "sex": "M",
+            "age": 25
+        },
+        "caller": {
+            "last_name": "distler",
+            "first_name": "unknown",
+            "callback_number": "(314) 273-3194",
+            "clinical_service": "Neurology",
+            "attending_doctor": null,
+            "caller_details": null
+        },
+        "laboratory_test": "Encephalopathy Auto Immune (Serum and CSF)",
+        "call_category": "Test Approval",
+        "call_details": "Test approval for Encephalopathy Auto Immune (Serum and CSF). Collection date: 8/29, Collection time: 0140. Sample stability: Room Temp, Refrigerated.",
+        "specimen_type": "CSF and blood",
+        "resolution": "New"
     },
-    "laboratory_test": "FGQ1B antibody",
-    "call_category": "Lab Problem",
-    "call_details": "This patient had a serum sample sent to Mayo three days ago and since then has had plasmapheresis and we'd like to test the FGQ1B antibody on serum. We're having trouble because we did plasmapheresis and now we can't detect the antibody so we're looking for an old sample. We're wondering if either we in the lab at BGH have a sample or at Mayo they have a sample we could add on or send to Mayo to get the FGQ1B antibody.",
-    "specimen_type": "serum",
-    "resolution": "New"
-}
+    {
+        "service": "Chemistry",
+        "patient": {
+            "last_name": "snyder",
+            "first_name": "charlie",
+            "dob": "1995-05-18T00:00:00",
+            "mrn": 2904624,
+            "sex": "M",
+            "age": 25
+        },
+        "caller": {
+            "last_name": "distler",
+            "first_name": "unknown",
+            "callback_number": "(314) 273-3194",
+            "clinical_service": "Neurology",
+            "attending_doctor": null,
+            "caller_details": null
+        },
+        "laboratory_test": "Encephalopathy Auto Immune (Serum and CSF)",
+        "call_category": "Test Approval",
+        "call_details": "Test approval for Encephalopathy Auto Immune (Serum and CSF). Collection date: 8/29, Collection time: 0140. Sample stability: Room Temp, Refrigerated.",
+        "specimen_type": "CSF and blood",
+        "resolution": "New"
+    }
+]

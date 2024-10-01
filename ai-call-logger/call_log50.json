@@ -1,0 +1,1156 @@
+{
+    "call_records": [
+        {
+            "call_category": "Consult",
+            "call_details": "The results are showing borderline levels. The patient has symptoms of lupus, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's symptoms are worsening, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "Rheumatology",
+                "first_name": "dr.",
+                "last_name": "yellow"
+            },
+            "laboratory_test": "ANA",
+            "patient": {
+                "age": null,
+                "dob": 271400400.0,
+                "first_name": "robert",
+                "last_name": "blue",
+                "mrn": 778800112,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results of the H. pylori test on the stool sample are inconclusive. The patient has symptoms of peptic ulcer disease, and confirmation is needed to start treatment. The patient's condition is critical, and accurate results are needed urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "GI",
+                "first_name": "dr.",
+                "last_name": "purple"
+            },
+            "laboratory_test": "H. pylori",
+            "patient": {
+                "age": null,
+                "dob": 633938400.0,
+                "first_name": "emily",
+                "last_name": "yellow",
+                "mrn": 889911223,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "stool"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The patient has a persistent cough and weight loss, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Pulmonary",
+                "first_name": "unknown",
+                "last_name": "martinez"
+            },
+            "laboratory_test": "Tuberculosis testing",
+            "patient": {
+                "age": null,
+                "dob": 30952800.0,
+                "first_name": "david",
+                "last_name": "green",
+                "mrn": 778899001,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "sputum"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The patient is experiencing chest pain and elevated heart enzymes. The results of the Troponin test are inconclusive. Need to confirm if the sample was processed correctly or if a new sample is needed. The patient is in critical condition and results are needed urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "Cardio Thoracic",
+                "first_name": "dr.",
+                "last_name": "smith"
+            },
+            "laboratory_test": "Troponin",
+            "patient": {
+                "age": null,
+                "dob": 315554400.0,
+                "first_name": "john",
+                "last_name": "doe",
+                "mrn": 123456789,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing abnormal creatinine levels. The patient has symptoms of kidney failure, and we need to confirm the diagnosis to start the treatment. Can you check if there's any issue with the sample or the testing process? We need to make a treatment decision as soon as possible. The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Renal",
+                "first_name": "unknown",
+                "last_name": "lewis"
+            },
+            "laboratory_test": "Kidney Function",
+            "patient": {
+                "age": null,
+                "dob": 582094800.0,
+                "first_name": "karen",
+                "last_name": "scott",
+                "mrn": 667788990,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "urine"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing borderline levels. The patient has joint pain and swelling, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's symptoms are worsening, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Rheumatology",
+                "first_name": "unknown",
+                "last_name": "wilson"
+            },
+            "laboratory_test": "Rheumatoid Factor",
+            "patient": {
+                "age": null,
+                "dob": 396853200.0,
+                "first_name": "laura",
+                "last_name": "adams",
+                "mrn": 889900112,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Laboratory Hematology",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Consult",
+            "call_details": "The results are showing abnormal cholesterol levels. The patient has a history of heart disease, and we need to confirm the results to adjust the treatment plan. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Cardio Thoracic",
+                "first_name": "unknown",
+                "last_name": "harris"
+            },
+            "laboratory_test": "Lipid Panel",
+            "patient": {
+                "age": null,
+                "dob": -312141600.0,
+                "first_name": "james",
+                "last_name": "brown",
+                "mrn": 445566778,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The patient is showing severe neurological symptoms, and we need the test results to proceed with the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is deteriorating, and we need to make a treatment decision as soon as possible.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "Neurology",
+                "first_name": "dr.",
+                "last_name": "johnson"
+            },
+            "laboratory_test": "Encephalopathy Auto Immune",
+            "patient": {
+                "age": null,
+                "dob": 642747600.0,
+                "first_name": "emily",
+                "last_name": "clark",
+                "mrn": 987654321,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "csf"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing abnormal clotting times. The patient is scheduled for surgery tomorrow, and we need to ensure there are no issues with the sample or the testing process. Can you verify the results and let us know if we need to collect a new sample? The patient's surgery is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "Hematology",
+                "first_name": "dr.",
+                "last_name": "lee"
+            },
+            "laboratory_test": "Coagulation Panel",
+            "patient": {
+                "age": null,
+                "dob": 177742800.0,
+                "first_name": "michael",
+                "last_name": "brown",
+                "mrn": 456789123,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Laboratory Hematology",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing conflicting markers. The patient has symptoms of multiple myeloma, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is deteriorating, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": "caller is from oncology department",
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "clark"
+            },
+            "laboratory_test": "Myeloma Panel",
+            "patient": {
+                "age": null,
+                "dob": -544906800.0,
+                "first_name": "susan",
+                "last_name": "davis",
+                "mrn": 556677889,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "bone marrow"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results of the C. difficile test on the stool sample are inconclusive. The patient has severe diarrhea and abdominal pain, and we need to confirm the diagnosis to start the treatment. Can you check if there's any issue with the sample or the testing process? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "GI",
+                "first_name": "dr.",
+                "last_name": "thompson"
+            },
+            "laboratory_test": "C. difficile",
+            "patient": {
+                "age": null,
+                "dob": -131133600.0,
+                "first_name": "robert",
+                "last_name": "king",
+                "mrn": 990011223,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "stool"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing low hemoglobin levels. The patient is experiencing fatigue and pallor. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is concerning, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "SLCH",
+                "first_name": "unknown",
+                "last_name": "parker"
+            },
+            "laboratory_test": "Complete Blood Count (CBC)",
+            "patient": {
+                "age": 8,
+                "dob": 1429678800.0,
+                "first_name": "lily",
+                "last_name": "evans",
+                "mrn": 112233445,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Laboratory Hematology",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results of the C. difficile test on the stool sample are inconclusive. The patient has severe diarrhea and abdominal pain, and a confirmed diagnosis is needed to start treatment. The patient's condition is critical, and accurate results are required.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "GI",
+                "first_name": "unknown",
+                "last_name": "thompson"
+            },
+            "laboratory_test": "C. difficile",
+            "patient": {
+                "age": null,
+                "dob": -131133600.0,
+                "first_name": "robert",
+                "last_name": "king",
+                "mrn": 990011223,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "stool"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The patient has severe diarrhea and abdominal pain, and we need to confirm the diagnosis to start the treatment. The results are inconclusive. Can you check if there's any issue with the sample or the testing process? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "GI",
+                "first_name": "unknown",
+                "last_name": "thompson"
+            },
+            "laboratory_test": "C. difficile",
+            "patient": {
+                "age": null,
+                "dob": -131133600.0,
+                "first_name": "robert",
+                "last_name": "king",
+                "mrn": 123789456,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "stool"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing borderline levels. The patient has joint pain and swelling, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's symptoms are worsening, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Rheumatology",
+                "first_name": "unknown",
+                "last_name": "wilson"
+            },
+            "laboratory_test": "Rheumatoid Factor",
+            "patient": {
+                "age": null,
+                "dob": 396853200.0,
+                "first_name": "laura",
+                "last_name": "adams",
+                "mrn": 654321789,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Consult",
+            "call_details": "The results are showing borderline levels. The patient has joint pain and swelling, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's symptoms are worsening, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Rheumatology",
+                "first_name": "unknown",
+                "last_name": "wilson"
+            },
+            "laboratory_test": "Rheumatoid Factor",
+            "patient": {
+                "age": null,
+                "dob": 396853200.0,
+                "first_name": "laura",
+                "last_name": "adams",
+                "mrn": 889900112,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing abnormal creatinine levels. The patient has symptoms of kidney failure, and we need to confirm the diagnosis to start the treatment. Can you check if there's any issue with the sample or the testing process? We need to make a treatment decision as soon as possible. The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Renal",
+                "first_name": "unknown",
+                "last_name": "lewis"
+            },
+            "laboratory_test": "Kidney Function",
+            "patient": {
+                "age": null,
+                "dob": 582094800.0,
+                "first_name": "karen",
+                "last_name": "scott",
+                "mrn": 654789321,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "urine"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results of the skin biopsy are inconclusive. The patient has a suspicious lesion, and we need to confirm if it's malignant. Can you check if there's any issue with the sample or the testing process? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "taylor"
+            },
+            "laboratory_test": "Histopathology",
+            "patient": {
+                "age": null,
+                "dob": 439020000.0,
+                "first_name": "mark",
+                "last_name": "johnson",
+                "mrn": 223344556,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "skin biopsy"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are inconsistent with the patient's clinical presentation. The patient has symptoms of hyperthyroidism, but the test results are normal. Can you check if there's any issue with the sample or the testing process? We need to confirm the diagnosis and adjust the treatment plan accordingly. The patient's condition is worsening, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Endocrine",
+                "first_name": "unknown",
+                "last_name": "davis"
+            },
+            "laboratory_test": "Thyroid Function",
+            "patient": {
+                "age": null,
+                "dob": 479282400.0,
+                "first_name": "sarah",
+                "last_name": "white",
+                "mrn": 321654987,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "serum"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The patient has a persistent cough and weight loss, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "Pulmonary",
+                "first_name": "unknown",
+                "last_name": "martinez"
+            },
+            "laboratory_test": "Tuberculosis",
+            "patient": {
+                "age": null,
+                "dob": 30952800.0,
+                "first_name": "david",
+                "last_name": "green",
+                "mrn": 789123456,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "sputum"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are taking longer than expected. The patient has symptoms of MS, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Neurology",
+                "first_name": "unknown",
+                "last_name": "robinson"
+            },
+            "laboratory_test": "Multiple Sclerosis Panel",
+            "patient": {
+                "age": null,
+                "dob": 266734800.0,
+                "first_name": "anna",
+                "last_name": "smith",
+                "mrn": 334455667,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "csf"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results of the skin biopsy are inconclusive. The patient has a suspicious lesion, and we need to confirm if it's malignant. Can you check if there's any issue with the sample or the testing process? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "taylor"
+            },
+            "laboratory_test": "Histopathology",
+            "patient": {
+                "age": null,
+                "dob": 439020000.0,
+                "first_name": "mark",
+                "last_name": "johnson",
+                "mrn": 223344556,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "skin biopsy"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing abnormal creatinine levels. The patient has symptoms of kidney failure, and we need to confirm the diagnosis to start the treatment. Can you check if there's any issue with the sample or the testing process? We need to make a treatment decision as soon as possible. The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "Renal",
+                "first_name": "unknown",
+                "last_name": "lewis"
+            },
+            "laboratory_test": "Kidney Function",
+            "patient": {
+                "age": null,
+                "dob": 582094800.0,
+                "first_name": "karen",
+                "last_name": "scott",
+                "mrn": 667788990,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "urine"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are taking longer than expected. The patient has symptoms of acute HIV infection, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": "dr. anderson from infectious disease",
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "anderson"
+            },
+            "laboratory_test": "HIV testing",
+            "patient": {
+                "age": null,
+                "dob": 703573200.0,
+                "first_name": "jessica",
+                "last_name": "brown",
+                "mrn": 987321654,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing conflicting markers. The patient has symptoms of leukemia, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is deteriorating, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": "caller is from oncology",
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "clark"
+            },
+            "laboratory_test": "Leukemia Panel",
+            "patient": {
+                "age": null,
+                "dob": -450558000.0,
+                "first_name": "william",
+                "last_name": "harris",
+                "mrn": 321987654,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "bone marrow"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The patient has a persistent cough and weight loss, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Pulmonary",
+                "first_name": "unknown",
+                "last_name": "martinez"
+            },
+            "laboratory_test": "Tuberculosis testing",
+            "patient": {
+                "age": null,
+                "dob": 30952800.0,
+                "first_name": "david",
+                "last_name": "green",
+                "mrn": 778899001,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "sputum"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are taking longer than expected. The patient has symptoms of MS, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "Neurology",
+                "first_name": "dr.",
+                "last_name": "robinson"
+            },
+            "laboratory_test": "Multiple Sclerosis Panel",
+            "patient": {
+                "age": null,
+                "dob": 266734800.0,
+                "first_name": "anna",
+                "last_name": "smith",
+                "mrn": 334455667,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "CSF"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing conflicting markers. The patient has symptoms of multiple myeloma, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is deteriorating, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": "dr. clark from oncology",
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "clark"
+            },
+            "laboratory_test": "Myeloma Panel",
+            "patient": {
+                "age": null,
+                "dob": -544906800.0,
+                "first_name": "susan",
+                "last_name": "davis",
+                "mrn": 556677889,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "bone marrow"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing low hemoglobin levels. The patient is experiencing fatigue and pallor. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is concerning, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "SLCH",
+                "first_name": "unknown",
+                "last_name": "parker"
+            },
+            "laboratory_test": "Complete Blood Count (CBC)",
+            "patient": {
+                "age": 8,
+                "dob": 1429678800.0,
+                "first_name": "lily",
+                "last_name": "evans",
+                "mrn": 112233445,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Laboratory Hematology",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are taking longer than expected. The patient has symptoms of acute HIV infection, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": "dr. anderson from infectious disease",
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "anderson"
+            },
+            "laboratory_test": "HIV testing",
+            "patient": {
+                "age": null,
+                "dob": 703573200.0,
+                "first_name": "jessica",
+                "last_name": "brown",
+                "mrn": 1122334,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Consult",
+            "call_details": "The results are showing abnormal cholesterol levels. The patient has a history of heart disease, and we need to confirm the results to adjust the treatment plan. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Cardio Thoracic",
+                "first_name": "unknown",
+                "last_name": "harris"
+            },
+            "laboratory_test": "Lipid Panel",
+            "patient": {
+                "age": null,
+                "dob": -312141600.0,
+                "first_name": "james",
+                "last_name": "brown",
+                "mrn": 445566778,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are taking longer than expected. The patient has symptoms of acute HIV infection, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": "dr. anderson from infectious disease",
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "anderson"
+            },
+            "laboratory_test": "HIV testing",
+            "patient": {
+                "age": null,
+                "dob": 703573200.0,
+                "first_name": "jessica",
+                "last_name": "brown",
+                "mrn": 1122334,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Consult",
+            "call_details": "The results are showing abnormal cholesterol levels. The patient has a history of heart disease, and we need to confirm the results to adjust the treatment plan. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Cardio Thoracic",
+                "first_name": "unknown",
+                "last_name": "harris"
+            },
+            "laboratory_test": "Lipid Panel",
+            "patient": {
+                "age": null,
+                "dob": -312141600.0,
+                "first_name": "james",
+                "last_name": "brown",
+                "mrn": 445566778,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Consult",
+            "call_details": "The results are showing borderline levels. The patient has joint pain and swelling, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's symptoms are worsening, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Rheumatology",
+                "first_name": "unknown",
+                "last_name": "wilson"
+            },
+            "laboratory_test": "Rheumatoid Factor",
+            "patient": {
+                "age": null,
+                "dob": 396853200.0,
+                "first_name": "laura",
+                "last_name": "adams",
+                "mrn": 889900112,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The patient has severe diarrhea and abdominal pain, and we need to confirm the diagnosis to start the treatment. The results are inconclusive. Can you check if there's any issue with the sample or the testing process? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "GI",
+                "first_name": "unknown",
+                "last_name": "thompson"
+            },
+            "laboratory_test": "C. difficile",
+            "patient": {
+                "age": null,
+                "dob": -131133600.0,
+                "first_name": "robert",
+                "last_name": "king",
+                "mrn": 990011223,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "stool"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing conflicting markers. The patient has symptoms of multiple myeloma, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is deteriorating, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": "caller is from oncology department",
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "clark"
+            },
+            "laboratory_test": "Myeloma Panel",
+            "patient": {
+                "age": null,
+                "dob": -544906800.0,
+                "first_name": "susan",
+                "last_name": "davis",
+                "mrn": 556677889,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "bone marrow"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing low hemoglobin levels. The patient is experiencing fatigue and pallor. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is concerning, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "SLCH",
+                "first_name": "unknown",
+                "last_name": "parker"
+            },
+            "laboratory_test": "Complete Blood Count (CBC)",
+            "patient": {
+                "age": 8,
+                "dob": 1429678800.0,
+                "first_name": "lily",
+                "last_name": "evans",
+                "mrn": 112233445,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Laboratory Hematology",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The patient has a persistent cough and weight loss, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Pulmonary",
+                "first_name": "unknown",
+                "last_name": "martinez"
+            },
+            "laboratory_test": "Tuberculosis",
+            "patient": {
+                "age": null,
+                "dob": 30952800.0,
+                "first_name": "david",
+                "last_name": "green",
+                "mrn": 778899001,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "sputum"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are taking longer than expected. The patient has symptoms of MS, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Neurology",
+                "first_name": "unknown",
+                "last_name": "robinson"
+            },
+            "laboratory_test": "Multiple Sclerosis Panel",
+            "patient": {
+                "age": null,
+                "dob": 266734800.0,
+                "first_name": "anna",
+                "last_name": "smith",
+                "mrn": 334455667,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "CSF"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results of the skin biopsy are inconclusive. The patient has a suspicious lesion, and we need to confirm if it's malignant. Can you check if there's any issue with the sample or the testing process? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "taylor"
+            },
+            "laboratory_test": "Histopathology",
+            "patient": {
+                "age": null,
+                "dob": 439020000.0,
+                "first_name": "mark",
+                "last_name": "johnson",
+                "mrn": 223344556,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "skin biopsy"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing abnormal creatinine levels. The patient has symptoms of kidney failure, and we need to confirm the diagnosis to start the treatment. Can you check if there's any issue with the sample or the testing process? We need to make a treatment decision as soon as possible. The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "Renal",
+                "first_name": "unknown",
+                "last_name": "lewis"
+            },
+            "laboratory_test": "Kidney Function",
+            "patient": {
+                "age": null,
+                "dob": 582094800.0,
+                "first_name": "karen",
+                "last_name": "scott",
+                "mrn": 667788990,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "urine"
+        },
+        {
+            "call_category": "Consult",
+            "call_details": "The results are showing borderline levels. The patient has joint pain and swelling, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's symptoms are worsening, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Rheumatology",
+                "first_name": "unknown",
+                "last_name": "wilson"
+            },
+            "laboratory_test": "Rheumatoid Factor",
+            "patient": {
+                "age": null,
+                "dob": 396853200.0,
+                "first_name": "laura",
+                "last_name": "adams",
+                "mrn": 889900112,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "blood"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results of the C. difficile test on the stool sample are inconclusive. The patient has severe diarrhea and abdominal pain, and a confirmed diagnosis is needed to start treatment. The patient's condition is critical, and accurate results are required.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "GI",
+                "first_name": "unknown",
+                "last_name": "thompson"
+            },
+            "laboratory_test": "C. difficile",
+            "patient": {
+                "age": null,
+                "dob": -131133600.0,
+                "first_name": "robert",
+                "last_name": "king",
+                "mrn": 990011223,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "stool"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing conflicting markers. The patient has symptoms of multiple myeloma, and we need to confirm the diagnosis to start the treatment. Can you verify the results and let us know if we need to collect a new sample? The patient's condition is deteriorating, and we need accurate results to proceed with the treatment.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": "caller is from oncology department.",
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "clark"
+            },
+            "laboratory_test": "Myeloma Panel",
+            "patient": {
+                "age": null,
+                "dob": -544906800.0,
+                "first_name": "susan",
+                "last_name": "davis",
+                "mrn": 556677889,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "bone marrow"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The patient has a persistent cough and weight loss, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Pulmonary",
+                "first_name": "unknown",
+                "last_name": "martinez"
+            },
+            "laboratory_test": "Tuberculosis",
+            "patient": {
+                "age": null,
+                "dob": 30952800.0,
+                "first_name": "david",
+                "last_name": "green",
+                "mrn": 778899001,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Microbiology",
+            "specimen_type": "sputum"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are taking longer than expected. The patient has symptoms of MS, and we need to confirm the diagnosis to start the treatment. Can you check the status of the sample and expedite the testing process? The patient's condition is not improving, and we need the results urgently.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Neurology",
+                "first_name": "unknown",
+                "last_name": "robinson"
+            },
+            "laboratory_test": "Multiple Sclerosis Panel",
+            "patient": {
+                "age": null,
+                "dob": 266734800.0,
+                "first_name": "anna",
+                "last_name": "smith",
+                "mrn": 334455667,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "CSF"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results of the skin biopsy are inconclusive. The patient has a suspicious lesion, and we need to confirm if it's malignant. Can you check if there's any issue with the sample or the testing process? The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "unknown",
+                "caller_details": null,
+                "clinical_service": "Other",
+                "first_name": "unknown",
+                "last_name": "taylor"
+            },
+            "laboratory_test": "Histopathology",
+            "patient": {
+                "age": null,
+                "dob": 439020000.0,
+                "first_name": "mark",
+                "last_name": "johnson",
+                "mrn": 223344556,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Molecular",
+            "specimen_type": "skin biopsy"
+        },
+        {
+            "call_category": "Lab Problem",
+            "call_details": "The results are showing abnormal creatinine levels. The patient has symptoms of kidney failure, and we need to confirm the diagnosis to start the treatment. Can you check if there's any issue with the sample or the testing process? We need to make a treatment decision as soon as possible. The patient's condition is critical, and we need accurate results.",
+            "caller": {
+                "attending_doctor": null,
+                "callback_number": "",
+                "caller_details": null,
+                "clinical_service": "Renal",
+                "first_name": "unknown",
+                "last_name": "lewis"
+            },
+            "laboratory_test": "Kidney Function",
+            "patient": {
+                "age": null,
+                "dob": 582094800.0,
+                "first_name": "karen",
+                "last_name": "scott",
+                "mrn": 667788990,
+                "sex": null
+            },
+            "resolution": "New",
+            "service": "Chemistry",
+            "specimen_type": "urine"
+        }
+    ]
+}

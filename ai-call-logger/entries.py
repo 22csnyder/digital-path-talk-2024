@@ -3,10 +3,11 @@
 code expanding on structure fields and properties of each call log entry
 """
 
-from cgitb import text
+
 import os
 import json
 from datetime import datetime
+from textwrap import indent
 from typing import (
     Annotated,
     List,
@@ -17,12 +18,14 @@ from typing import (
 )  # Added Sequence import
 
 from pydantic import BaseModel, Field
+from pydantic import ConfigDict
+from pydantic_extra_types.phone_numbers import PhoneNumber
 
 import openai
 from dotenv import load_dotenv
 
-import marvin
-import marvin.audio
+# import marvin
+# import marvin.audio
 
 # Removed invalid backtick expressions and fixed indentation
 Service = Literal[
@@ -52,14 +55,18 @@ ClinicalService = Literal[
     "Other",
 ]
 
-from pydantic import ConfigDict
-from pydantic_extra_types.phone_numbers import PhoneNumber
 
 # class BJHPhoneNumberValidator(PhoneNumberValidator):
 #     default_region: Optional[str] = "US"
 
+# from util_json import json_indent
 
-config = ConfigDict(str_to_lower=True, str_strip_whitespace=True)  # noqa
+config = ConfigDict(
+    str_to_lower=True,
+    str_strip_whitespace=True,
+    json_encoders={datetime: lambda v: v.timestamp()},
+    json_schema_extra={"indent": 4},  # 4
+)
 
 
 class Person(BaseModel):  # noqa
@@ -149,9 +156,35 @@ class CallEntry(BaseModel):
     )
 
 
-class CalllogState(BaseModel):
+class CallLog(BaseModel):
     """The current list of calls logged"""
 
     call_records: list[CallEntry] = Field(
         ..., description="The list of individual call log entries"
     )
+
+
+toy_entry_dict = {
+    "service": "Chemistry",
+    "patient": {
+        "last_name": "doe",
+        "first_name": "john",
+        "dob": "1980-01-01T00:00:00Z",
+        "mrn": 123456789,
+        "sex": "M",
+        "age": 41,
+    },
+    "caller": {
+        "last_name": "smith",
+        "first_name": "jane",
+        "callback_number": "(123) 456-7890",
+        "clinical_service": "Cardiology",
+        "attending_doctor": "Dr. Who",
+        "caller_details": "resident",
+    },
+    "laboratory_test": "Troponin",
+    "call_category": "Critical Value",
+    "call_details": "Critical troponin value reported.",
+    "specimen_type": "blood",
+    "resolution": "Reported",
+}

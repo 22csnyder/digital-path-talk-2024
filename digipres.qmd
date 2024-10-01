@@ -561,6 +561,20 @@ It is exactly because medicine will have the most obstacles to AI adoption that 
 ## Specific Recommendations
 
 
-## Conclusions
+# Conclusions
+a)
+b)
+
+## Return on Investment? [(of time)]{.smaller}
 
 
+::: {.notes}
+- having free time is undervalued in medicine
+- like free money
+- how will you invest it?
+:::
+
+![](src/conclusion/xkcd_11th_grade.png)
+- comic from 15 years ago, more relevant than ever
+
+## How
