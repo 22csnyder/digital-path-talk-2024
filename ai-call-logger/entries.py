@@ -1,0 +1,157 @@
+# pylint: disable=too-many-lines
+"""
+code expanding on structure fields and properties of each call log entry
+"""
+
+from cgitb import text
+import os
+import json
+from datetime import datetime
+from typing import (
+    Annotated,
+    List,
+    Literal,
+    Optional,
+    Union,
+    Sequence,
+)  # Added Sequence import
+
+from pydantic import BaseModel, Field
+
+import openai
+from dotenv import load_dotenv
+
+import marvin
+import marvin.audio
+
+# Removed invalid backtick expressions and fixed indentation
+Service = Literal[
+    "Microbiology", "Chemistry", "Laboratory Hematology", "Molecular", "Transfusion"
+]
+
+ClinicalService = Literal[
+    "Allergy",
+    "BMT",
+    "Cardio Thoracic",
+    "ED",
+    "Endocrine",
+    "GI",
+    "GU",
+    "Hematology",
+    "Internal Med",
+    "Neurology",
+    "OB-GYN",
+    "Orthopedics",
+    "Pulmonary",
+    "Renal",
+    "Rheumatology",
+    "SLCH",
+    "Surgery",
+    "Podiatry",
+    "Psychiatry",
+    "Other",
+]
+
+from pydantic import ConfigDict
+from pydantic_extra_types.phone_numbers import PhoneNumber
+
+# class BJHPhoneNumberValidator(PhoneNumberValidator):
+#     default_region: Optional[str] = "US"
+
+
+config = ConfigDict(str_to_lower=True, str_strip_whitespace=True)  # noqa
+
+
+class Person(BaseModel):  # noqa
+    """A person"""
+
+    model_config: ConfigDict = config
+
+    last_name: str = Field(..., description="The last name of the person")
+    first_name: str = Field(..., description="The first name of the person")
+
+
+class Patient(Person):
+    """The recipient of medical care and present discussion"""
+
+    dob: datetime = Field(..., description="The date of birth of the patient")
+    mrn: int = Field(..., gt=0, description="The medical record number of the patient")
+    sex: Optional[Literal["M", "F"]] = Field(
+        ..., description="The sex of the patient (None if unknown)"
+    )
+    age: Optional[int] = Field(
+        ..., description="The age of the patient in years (None if unknown)"
+    )
+
+
+class Caller(Person):
+    """The staff or faculty member initiating the call"""
+
+    callback_number: str = Field(
+        description="The phone number at which the caller can be reached"
+    )
+    clinical_service: Optional[ClinicalService] = Field(
+        ...,
+        description="The clinical service that the call was made to.\
+            (Other if None of the above)(None if unsure)",
+    )
+    attending_doctor: Optional[Person] = Field(
+        ...,
+        description="The attending doctor on the case (often data not available -> '')",
+    )
+    caller_details: Optional[str] = Field(
+        ...,
+        description="Any additional details about the caller",
+    )
+
+
+class CallEntry(BaseModel):
+    """A call log entry for the BJH Resident Pathology Service"""
+
+    service: Service = Field(
+        default="Chemistry",
+        description="The pathology department service appropriate for handing the call",
+    )
+
+    patient: Optional[Patient] = Field(None, description="The patient information")
+
+    caller: Optional[Caller] = Field(None, description="The caller information")
+
+    laboratory_test: Optional[str] = Field(
+        None,
+        strip_whitespace=True,
+        str_to_lower=True,
+        max_length=100,
+        description="The most relevant laboratory assay test or service",
+    )
+
+    call_category: Optional[
+        Literal["Test Approval", "Lab Problem", "Alert", "Consult", "Feasibility"]
+    ] = Field(
+        None,
+        description="The category of the call (None if unsure or not applicable)",
+    )
+
+    call_details: Optional[str] = Field(
+        None,
+        max_length=1000,
+        description="The notes from the call. ( what is the situation, what is the question, etc )",
+    )
+
+    specimen_type: Optional[str] = Field(
+        None,
+        description="The relevant type of specimen under discussion in call,\
+        common examples include: blood, urine, sputum, csf, serum, plasma, chyle, 'other', etc",
+    )
+
+    resolution: Literal["New", "Pending", "Complete", "Approval", "Cancel"] = Field(
+        default="New", description="The resolution status of the call"
+    )
+
+
+class CalllogState(BaseModel):
+    """The current list of calls logged"""
+
+    call_records: list[CallEntry] = Field(
+        ..., description="The list of individual call log entries"
+    )
