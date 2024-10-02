@@ -311,6 +311,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -410,106 +411,134 @@ Christopher Snyder, MD, PhD
 </section>
 <section class="slide level2">
 
+<style>
+.blue {
+    color: blue;
+}
+</style>
+<style>
+.yellow {
+  color: yellow;
+}
+</style>
+<!-- stock themes
+[default, beige, blood, dark, league, moon, night, serif, simple, sky, solarized] -->
 <!-- # ipynb-shell-interactivity: all -->
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-<!-- (cme slide) -->
-<p>&lt; Insert CME Slide Here &gt;</p>
+<section id="financial-diclosures" class="slide level2">
+<h2>Financial Diclosures</h2>
+<p>I have no financial disclosures and no conflicts of interest to declare.</p>
 </section>
-<section id="big-claims-are-being-made-about-ai" class="slide level2">
-<h2>Big Claims are Being Made about AI</h2>
-<!-- ![AI Conceptual Image](ai-conceptual.jpg) -->
+<section id="ai-hootenanny" class="slide level2">
+<h2>AI Hootenanny</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
+<h3 id="pervasive-hype">Pervasive Hype</h3>
 <ul>
-<li>most transformative technology since industrialization</li>
-<li>“Self-improving AI” - “Singularity”</li>
-<li>potential to “transform healthcare”</li>
+<li>focus is on heralding future innovation</li>
+<li>my Natural Language Processing(NLP) professor around 2018 lamented that his work seems to follow him home in the news</li>
+<li>will reshape our daily lives - similar to industrial revolution - eventually reaches “Singularity” - potential to “transform healthcare”</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="src/ai-conceptual.jpg"></p>
+<h3 id="sparse-real-world-problem-solving">Sparse Real-World Problem Solving</h3>
+<ul>
+<li>“in the wild” either doesn’t happen or isn’t talked about</li>
+<li><span class="blue"><strong>Can anyone think of any examples where AI could <em>maybe</em> be applied?</strong></span></li>
+</ul>
 </div></div>
 </section>
-<section id="prophecies-are-rarely-actionable" class="slide level2">
-<h2>Prophecies are Rarely Actionable</h2>
+<section id="like-most-prophecies-ai-forcasts-are-hardly-actionable" class="slide level2">
+<h2>Like Most Prophecies, ‘AI Forcasts’ are Hardly Actionable</h2>
 <ul>
-<li>What should I do differently?
-<ul>
-<li>“now” even less clear than “later” <img data-src="src/ai-clueless.avif"></li>
-</ul></li>
-<li>Is it “too early” to pay attention?</li>
+<li>What should I do?</li>
+<li>When should I do it?</li>
 </ul>
+<aside class="notes">
+<p>what constitutes an adaptive response depends on your assesment of Two Variables</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="little-evidence-to-inform-preparation" class="slide level2">
-<h2>Little Evidence to Inform Preparation</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h5 id="what-is-the-best-approach">What is the best approach?</h5>
-<ul>
-<li>to date, business as usual</li>
-<li>maybe “wait and see”
-<ul>
-<li>conservative ≠ safe</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="src/ai-tidalwave.webp"></p>
-<figcaption>ai tidal wave</figcaption>
-</figure>
+<section id="a-timeline-for-ai" class="slide level2">
+<h2>A Timeline for AI</h2>
+<div class="r-stack">
+<p><img data-src="src/intro/ai-hype01_boombust.jpg" class="fragment fade-in-then-out"></p>
+<p><img data-src="src/intro/ai-hype02_nextbigthing.jpg" class="fragment fade-in-then-out"></p>
+<p><img data-src="src/intro/ss-punnet-fragile0.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="src/intro/ss-punnet-fragile1.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="src/intro/ai-hype03_colorfultimeline.png" class="fragment fade-in-then-out"></p>
 </div>
-</div></div>
 </section>
-<section id="objectives" class="slide level2">
+<section id="objectives" class="slide level2 scrollable">
 <h2>Objectives</h2>
+<h3 id="outline">outline</h3>
 <ol type="1">
-<li><p>Introduce “Computers that Know What You Mean” as an <strong>existing</strong> and transformative AI technology</p>
-<ol start="2" type="1">
-<li>Highlight being “Conversant” in Computing as a natural extension of language, literacy, or teamwork.</li>
-</ol></li>
-<li><p>Provide examples of how “Computers that Know What You Mean” can empower non-technical users to develop informatics solutions with minimal effort.</p></li>
-<li><p>Demonstrate the impact of “Computers that Know What You Mean” on the relationship between computers and humans, essentially allowing for <strong>computers that do what you want</strong>.</p></li>
-<li><p>Provide recommendations for how medical informatics professionals, and systems of professionals can best leverage this transformative technology in their work.</p></li>
+<li>Outline the mechanisms by which AI adapts and accelerates real world workflows <em>today</em> (from my tenor as a pathology resident)</li>
+<li>Explain conceptually: how to anticipate when AI will be useful to apply to a particualr circumstance.</li>
+<li>Demonstrate “hands-off” informatics implementation of AI solutions, also made possible by AI.</li>
+<li>Give a Theoretical Basis: why proficiency in ai-tools (in-principle) should be (a) empowering and (b) eventually universal, vis-a-vis literacy</li>
+<li>Introduce Diagramatically a classification system for AI-Application facilitating computer-tasks.</li>
+<li>Automate Call Log Entry via an AI Application. <!-- - entry of call metadata into the pathology resident call-log form from simulated call audio. --> ::: { .smaller .indent=2em}</li>
 </ol>
+<ul>
+<li>if time, show how an AI agent can be used to append, modify, save, query, analyze past log-entries.</li>
+<li>if time, show easy integration with downstream informatic-endpoints e.g.&nbsp;email notification for impending sample expiration, ai entry summarization and report generation.</li>
+</ul>
 </section>
-<section id="computers-usually-dont-always-know-what-you-mean" class="slide level2">
-<h2>Computers usually <em>don’t</em> always* know what you mean</h2>
+<section id="calibrating-perceptions-of-informatics-a-prerequisite-to-discussing-change" class="slide level2">
+<h2>Calibrating Perceptions of Informatics: <em>a prerequisite to discussing change</em></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a>dff<span class="op">=</span>pd.read_sql(</span>
-<span id="cb1-2"><a href=""></a>  <span class="ss">f""" SELECT *</span></span>
-<span id="cb1-3"><a href=""></a><span class="ss">        FROM results</span></span>
-<span id="cb1-4"><a href=""></a><span class="ss">        WHERE </span><span class="sc">{</span>ASSAY<span class="sc">}</span><span class="ss"> == "</span><span class="sc">{</span>task_assay<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb1-5"><a href=""></a><span class="ss">        AND </span><span class="sc">{</span>CONTROL_MATERIAL<span class="sc">}</span><span class="ss"> == "</span><span class="sc">{</span>control_material<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb1-6"><a href=""></a><span class="ss">        AND </span><span class="sc">{</span>STATUS<span class="sc">}</span><span class="ss"> not in </span><span class="sc">{</span>bad_result_status<span class="sc">}</span></span>
-<span id="cb1-7"><a href=""></a><span class="ss">        AND </span><span class="sc">{</span>PERFORMED_TIMESTAMP<span class="sc">}</span><span class="ss"> &gt; '</span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">'</span></span>
-<span id="cb1-8"><a href=""></a><span class="ss">  """</span>,conn)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h4 id="what-is-informatics-to-you">What is Informatics to <em>You</em></h4>
 <ul>
-<li>precise syntax required</li>
+<li>baseline <em>status quo ante</em> AI</li>
+<li>perceptions vary</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href=""></a><span class="co"># Compress a file</span></span>
-<span id="cb2-2"><a href=""></a><span class="fu">tar</span> <span class="at">-czvf</span> file.tar.gz file</span>
-<span id="cb2-3"><a href=""></a></span>
-<span id="cb2-4"><a href=""></a><span class="co">#show port forwards</span></span>
-<span id="cb2-5"><a href=""></a><span class="ex">netsh</span> interface portproxy show v4tov4</span>
-<span id="cb2-6"><a href=""></a></span>
-<span id="cb2-7"><a href=""></a><span class="co">#mount a network drive</span></span>
-<span id="cb2-8"><a href=""></a><span class="fu">mount</span> <span class="at">-t</span> drvfs /mnt/Box</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<img src="src/intro/aram-mojtabai-hacking.gif" alt="Hacking GIF" style="width:100%;max-width:100%;">
+<p style="margin-top:10px;font-weight:bold;">
+honest impressions, 2012
+</p>
+</div></div>
+<aside class="notes">
+<p>Truth -No one ever gets dramatically more efficient than a beginner Truth- No one is naturally advantaged or inclined. Informatics is naturally inclusive</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="informatics-is-hard-for-everyone" class="slide level2">
+<h2>Informatics is Hard for Everyone</h2>
+<p>Always has been <!-- , \[~~Always will be~~\] --></p>
+<!-- ![](src/intro/xkcd_terminal.webp){width="50%" max-width="50%"} -->
+<h4 id="the-terminal"><strong>the terminal</strong></h4>
 <ul>
-<li>memorized(?) incantations</li>
+<li>intimidating, unforgiving, powerful</li>
 </ul>
-</div><p><img data-src="src/xkcd_terminal.webp"></p>
-</div>
+<h5 id="previous-approach">Previous approach</h5>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {bash} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href=""></a>tar -czvf file.tar.gz mydata.csv </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h5 id="ai-aided-approach">AI aided approach</h5>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {bash} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href=""></a>gh copilot suggest "please compress my file with `tar` command</span>
+<span id="cb2-2"><a href=""></a>  Use the most common, generic approach.</span>
+<span id="cb2-3"><a href=""></a>  You know what I want...Just do the thing, please."</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="gene-panels-spot-the-difference" class="slide level2">
 <h2>Gene Panels, Spot the Difference</h2>
-<!-- ## Computers that *do* know what you mean -->
-<!-- ### Me, on Molecular Call -->
-<!-- Spot the Difference -->
-<!-- https://chatgpt.com/share/66f2e625-ab44-8005-a883-686a92017a51 -->
 <p><img data-src="src/gene-panels-03.png" style="width:30.0%"></p>
 <img data-src="src/gene-panels-02.png" class="r-stretch">
 </section>
@@ -518,7 +547,6 @@ Christopher Snyder, MD, PhD
 <div class="columns">
 <div class="column" style="width:25%;">
 <p><a href="https://chatgpt.com/share/66f2e625-ab44-8005-a883-686a92017a51">chatgpt thread</a></p>
-<h4 id="what-i-said-vs-what-i-meant">what I said vs what I meant</h4>
 </div><div class="column" style="width:75%;">
 <p><img data-src="src/gene-panels-01.png"></p>
 </div></div>
@@ -528,17 +556,17 @@ Christopher Snyder, MD, PhD
 <h4 id="a-slippery-slope"><span style="color: blue;">A Slippery Slope</span></h4>
 <table class="caption-top">
 <colgroup>
-<col style="width: 31%">
-<col style="width: 68%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Text</strong> Autocomplete</td>
-<td>→ next word</td>
+<td>-&gt; next word</td>
 </tr>
 <tr class="even">
 <td><strong>Language</strong> Translation</td>
-<td><x> in Spanish would be →</x></td>
+<td><x> in Spanish would be -&gt;</x></td>
 </tr>
 <tr class="odd">
 <td><strong>Information</strong> Transformation</td>
@@ -546,11 +574,11 @@ Christopher Snyder, MD, PhD
 </tr>
 <tr class="even">
 <td></td>
-<td>- board material → podcast discussing it</td>
+<td>-&gt; board material -&gt; podcast discussing it</td>
 </tr>
 <tr class="odd">
 <td><strong>Instruction</strong> Implementation</td>
-<td>goal &lt;-&gt; code achieving goal</td>
+<td>goal -&gt; code achieving goal</td>
 </tr>
 </tbody>
 </table>
@@ -558,7 +586,7 @@ Christopher Snyder, MD, PhD
 <section>
 <section id="wustl-weekly-biogram-report-analysis" class="title-slide slide level1 center">
 <h1>WUSTL Weekly Biogram Report Analysis</h1>
-<p>data from <a href="https://diorama.wustl.edu/weekly-report">https://diorama.wustl.edu/weekly-report</a></p>
+<p>data from <a href="https://diorama.wustl.edu/weekly-report" class="uri">https://diorama.wustl.edu/weekly-report</a></p>
 </section>
 <section id="weekly-wustl-biogram" class="slide level2">
 <h2>Weekly WUSTL Biogram</h2>
@@ -580,24 +608,17 @@ Christopher Snyder, MD, PhD
 <h2>LLM-Driven Data (?)Dicing</h2>
 
 <img data-src="src/biogram-piegraph.png" class="r-stretch"></section></section>
-<section>
 <section id="intermission" class="title-slide slide level1 center">
 <h1>Intermission</h1>
+<!-- ## Progress Outline
 
+-   [x] Introduction to "Computers that Know What You Mean"
+-   [ ] Why would anyone want to "talk to computers"?
+-   [ ] Overview of current tools and methologies
+-   [ ] Example walkthrough of a simple informatics task
+-   [ ] Recommendations for leveraging this and future transformative technologies -->
 </section>
-<section id="progress-outline" class="slide level2">
-<h2>Progress Outline</h2>
-<ul class="task-list">
-<li><label><input type="checkbox" checked="">Introduction to “Computers that Know What You Mean”</label>
-<ul>
-<li>technical barrier ~ asking a friend for a favor</li>
-</ul></li>
-<li><label><input type="checkbox">Why would anyone want to “talk to computers”?</label></li>
-<li><label><input type="checkbox">Overview of current tools and methologies</label></li>
-<li><label><input type="checkbox">Example walkthrough of a simple informatics task</label></li>
-<li><label><input type="checkbox">Recommendations for leveraging this and future transformative technologies</label></li>
-</ul>
-</section></section>
+
 <section>
 <section id="why-should-i-talk-to-computers-how-is-that-empowering" class="title-slide slide level1 center">
 <h1>Why Should I Talk to Computers? How is that empowering?</h1>
@@ -647,8 +668,8 @@ Christopher Snyder, MD, PhD
 <!-- |--------------------|------------------------| -->
 <table class="caption-top">
 <colgroup>
-<col style="width: 9%">
-<col style="width: 90%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -659,11 +680,11 @@ Christopher Snyder, MD, PhD
 <tbody>
 <tr class="odd">
 <td>Economies of Scope</td>
-<td>- Children enlisting adults<br>- Multi-disciplinary care teams<br><span class="fragment" data-fragment-index="1">- <strong>Using Computers…</strong></span> <span class="fragment" data-fragment-index="1"><strong>learning from data</strong></span></td>
+<td>- enlisting adults<br>- Multi-disciplinary <br><span class="fragment" data-fragment-index="1">- <strong>learning from data</strong></span></td>
 </tr>
 <tr class="even">
 <td>Economies of Scale</td>
-<td>- Children working together<br>- Staffing pathology services<br>- Resident scheduling<br><span class="fragment" data-fragment-index="2">- <strong>Using Computers…</strong></span> <span class="fragment" data-fragment-index="2"><strong>automating tasks</strong></span></td>
+<td>- cooperation <br>- minimum staffing, redundancy <br><span class="fragment" data-fragment-index="1">- <strong>automating tasks</strong></span></td>
 </tr>
 </tbody>
 </table>
@@ -671,29 +692,26 @@ Christopher Snyder, MD, PhD
 <section id="communication-key-to-efficiency" class="slide level2">
 <h2>Communication Key to Efficiency</h2>
 <ul>
-<li><p><em>inefficiency</em>: gap between “knowing what to do” and “being done”</p></li>
-<li><p>inefficiency can be reduced by communication with peers</p></li>
-<li><p>Example: HMA (Hematologic Malignancy Algorithm)</p>
-<ul>
-<li>extensive communication in advance with oncologists</li>
-<li>streamlines adding molecular testing once indicated <!-- [hma algorithm](src/language/hma.png) --></li>
-</ul></li>
-<li><p>Many inefficiencies are amenable to an informatics solution</p>
-<ul>
-<li>however, often “the juice isn’t worth the squeeze”</li>
-</ul></li>
-<li><p>By lowering the barrier working with computers, and by expanding the pool of practitioners who can do so, AI stands to remove essentially all present workflow inefficiencies</p>
-<ul>
-<li>everything is worth the squeeze when you have a juicer</li>
-</ul></li>
+<li><p>AI may result in removal of virtually all workflow inefficiencies</p></li>
+<li><p>By lowering the barrier working with computers, and by expanding the pool of practitioners who can do so, AI stands to remove essentially all present workflow inefficiencies –&gt;</p></li>
+<li><p>everything is worth the squeeze when you have a juicer <!-- -   *inefficiency*: gap between "knowing what to do" and "being done"
+
+-   inefficiency can be reduced by communication with peers
+
+-   Example: HMA (Hematologic Malignancy Algorithm)
+
+    -   extensive communication in advance with oncologists
+    -   streamlines adding molecular testing once indicated <!-- [hma algorithm](src/language/hma.png) --></p></li>
 </ul>
+<!-- -   Many inefficiencies are amenable to an informatics solution -->
+<!-- -   By lowering the barrier working with computers, and by expanding the pool of practitioners who can do so, AI stands to remove essentially all present workflow inefficiencies -->
 </section></section>
 <section>
 <section id="overview-of-current-tools-computer-communication-aids" class="title-slide slide level1 center">
 <h1>Overview of Current Tools / Computer-Communication Aids</h1>
 
 </section>
-<section id="ai-tools-for-computer-use" class="slide level2">
+<section id="ai-tools-for-computer-use" class="slide level2 scrollable">
 <h2>AI Tools For Computer Use</h2>
 <aside class="notes">
 <p>these are my notes</p>
@@ -719,6 +737,8 @@ Christopher Snyder, MD, PhD
 <section id="running-data-example-uds-parse" class="slide level2 scrollable">
 <h2>Running Data Example: UDS Parse</h2>
 <h3 id="task-parse-uds-screen-results-for-positive-patientdrugs-resulted">Task: parse UDS screen results for positive patient+drugs resulted</h3>
+<!-- [uds_notebook](http://localhost:8888/doc/tree/drugscreen_result_parsing.ipynb){preview-links=true} -->
+<p><a href="file:///Users/christophersnyder/Projects/digital-path-talk-2024/uds_parse/drugscreen_result_parsing.html" data-preview-links="true">uds_notebook</a></p>
 <p>SCREEN_RESULT_COMMENT</p>
 <p>“The following compounds were detected:</p>
 <p>Tetrahydrocannabinol (THC)</p>
@@ -875,7 +895,7 @@ Benzoylecgonine (BEG) Fentanyl Tramadol O-Desmethyl tramadol Repeated and verifi
 
 <img data-src="src/tools/uds-marvin-03.png" class="r-stretch quarto-figure-center"><p class="caption">Coding without Rigid Rules</p><p><a href="https://chatgpt.com/c/66faa511-42c4-8005-86c0-ae32a866b1b3" data-preview-link="true" style="text-align: center">chatgpt thread</a></p>
 </section>
-<section id="ai-tools-for-computer-use-summary" class="slide level2">
+<section id="ai-tools-for-computer-use-summary" class="slide level2 scrollable">
 <h2>AI Tools For Computer Use (summary)</h2>
 <aside class="notes">
 <p>these are my notes</p>
@@ -955,26 +975,26 @@ Benzoylecgonine (BEG) Fentanyl Tramadol O-Desmethyl tramadol Repeated and verifi
 </ul>
 </div></div>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section" class="slide level2">
 <h2></h2>
 <!-- ["Beast Mode"](src/pusuit_angle/BeastQuake720p.mp4) -->
 <video width="100%" height="auto" controls="">
 <source src="src/pusuit_angle/BeastQuake720p.mp4" type="video/mp4">
 <p>Your browser does not support the video tag. </p>
 </video></section>
-<section id="section-2" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 
 <img data-src="src/pusuit_angle/ss_before.png" class="r-stretch quarto-figure-center"><p class="caption">Alt text</p></section>
-<section id="section-3" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 
 <img data-src="src/pusuit_angle/ss_after.png" class="r-stretch quarto-figure-center"><p class="caption">Alt text</p></section>
-<section id="section-4" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 
 <img data-src="src/pusuit_angle/ss_directly-chasing-the-ball.png" class="r-stretch quarto-figure-center"><p class="caption">Alt text</p></section>
-<section id="section-5" class="slide level2">
+<section id="section-4" class="slide level2">
 <h2></h2>
 
 <img data-src="src/pusuit_angle/ss_slower-adopters-must-plan-farther-ahead.png" class="r-stretch quarto-figure-center"><p class="caption">Alt text</p></section>
@@ -985,9 +1005,39 @@ Benzoylecgonine (BEG) Fentanyl Tramadol O-Desmethyl tramadol Repeated and verifi
 </section>
 <section id="specific-recommendations" class="slide level2">
 <h2>Specific Recommendations</h2>
+</section></section>
+<section>
+<section id="conclusions" class="title-slide slide level1 center scrollable">
+<h1>Conclusions</h1>
+<ol type="a">
+<li></li>
+<li></li>
+</ol>
 </section>
-<section id="conclusions" class="slide level2">
-<h2>Conclusions</h2>
+<section id="return-on-investment-of-time" class="slide level2">
+<h2>Return on Investment? <span class="smaller">(of time)</span></h2>
+<aside class="notes">
+<ul>
+<li>having free time is undervalued in medicine</li>
+<li>like free money</li>
+<li>how will you invest it?</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><img data-src="src/conclusion/xkcd_11th_grade.png"> - comic from 15 years ago, more relevant than ever</p>
+</section>
+<section id="how" class="slide level2">
+<h2>How</h2>
+<p>::::::::::::::::::::::::::: :::::::::::::::::::::::::::</p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -1147,7 +1197,7 @@ Benzoylecgonine (BEG) Fentanyl Tramadol O-Desmethyl tramadol Repeated and verifi
         hideCursorTime: 5000,
 
         // Opens links in an iframe preview overlay
-        previewLinks: false,
+        previewLinks: true,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
         transition: 'none',

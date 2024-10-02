@@ -64,7 +64,7 @@ ClinicalService = Literal[
 config = ConfigDict(
     str_to_lower=True,
     str_strip_whitespace=True,
-    # json_encoders={datetime: lambda v: v.timestamp()},
+    # json_encoders={datetime: lambda v: v.timestamp()}, # file looks like integer or s/t. not recognizable as datti
     json_schema_extra={"indent": 4},  # 4
 )
 

@@ -1,0 +1,24 @@
+---
+title: "marvin parse"
+format:
+  html:
+    code-fold: true
+---
+
+
+```py
+
+@marvin.fn
+def parse_uds_screen_results(text: str) -> list[str]:
+    """Parse UDS screen results for positive drugs"""
+
+
+parsed_text=parse_uds_screen_results(text_uds)
+    
+extracted_text = \
+    marvin.extract(
+        data=text_uds,  target=list[str],
+        instructions="extract drug name results from series of UDS screens",
+    )
+
+```

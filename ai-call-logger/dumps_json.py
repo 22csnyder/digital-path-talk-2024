@@ -3,7 +3,7 @@ from re import U
 
 import marvin
 
-from .entries import CallEntry
+from entries import CallEntry
 
 json_indent = 4
 json_path = "call_log.json"
@@ -19,6 +19,7 @@ from typing import (
     List,
     Literal,
     Optional,
+    Self,
     Union,
     Sequence,
 )  # Added Sequence import
@@ -45,9 +46,12 @@ def validate_json_path(file_path: str) -> None:
 
 
 class CallApp(BaseModel):
-    records: CallLog
-    json_path: Annotated[str, validate_json_path] = Field(
-        ..., description="Path to the JSON file which keeps current with `records`"
+    records: CallLog = Field(
+        ..., description="The CallLog records instance to be stored and manipulated"
+    )
+    json_path: Optional[Union[str, Path]] = Field(
+        default=None,
+        description="Path to the JSON file which stores CallLog `records` instance",
     )
 
     def log_artifact(self, inputs: Union[aiAudio, str, aiImage, CallEntry]):
@@ -106,23 +110,28 @@ class CallApp(BaseModel):
     @classmethod
     def load(cls, json_path: Union[str, Path] = json_path):
         json_path = Path(json_path)
-        validate_json_path(str(json_path))
+        # validate_json_path(str(json_path))
         if not json_path.exists():
             raise FileNotFoundError(f"File not found: {json_path}")
-
-        records: CallLog = CallLog(
-            records=json.loads(json_path.read_text())
-        )
-
-        loaded_app = cls(json_path=json_path, records=records)
-        return loaded_app
+        print("data")
+        data: Union[dict, list[dict]] = json.loads(json_path.read_text())
+        if isinstance(data, dict):
+            if "call_records" in data:
+                clog = CallLog(**data)
+            else:
+                data = [data]  # ? single entry maybe
+        elif isinstance(data, list):
+            clog = CallLog(call_records=data)
+        new_app = cls(records=clog, json_path=json_path)
+        return new_app
 
 
 from entries import toy_entry_dict
 
 if __name__ == "__main__":
-    app = CallApp(records=CallLog(call_records=[toy_entry_dict]),
-                  json_path="toy_json_path.json")
-    
+    app = CallApp(
+        records=CallLog(call_records=[toy_entry_dict]), json_path="toy_json_path.json"
+    )
+
     app.save()
     print("success")
