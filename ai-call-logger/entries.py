@@ -188,3 +188,45 @@ toy_entry_dict = {
     "specimen_type": "blood",
     "resolution": "Reported",
 }
+
+
+# call log database
+
+if __name__ == "__main__":
+    fake_data = {
+        "service": "Hematology",
+        "patient": {
+            "last_name": "Johnson",
+            "first_name": "Emily",
+            "dob": "1995-05-15T00:00:00Z",
+            "mrn": 987654321,
+            "sex": "F",
+            "age": 28,
+        },
+        "caller": {
+            "last_name": "Brown",
+            "first_name": "Michael",
+            "callback_number": "(555) 123-4567",
+            "clinical_service": "Emergency Medicine",
+            "attending_doctor": "Dr. Garcia",
+            "caller_details": "attending physician",
+        },
+        "laboratory_test": "Complete Blood Count",
+        "call_category": "Urgent Result",
+        "call_details": "Critically low platelet count detected.",
+        "specimen_type": "blood",
+        "resolution": "Pending",
+    }
+    entry = CallEntry(**fake_data)
+
+    # Convert the entry to a JSON string
+    json_data = entry.model_dump_json(indent=2)
+
+    print("CallEntry as JSON:")
+    print(json_data)
+
+    # Convert the entry to a dictionary
+    dict_data = entry.model_dump()
+
+    print("\nCallEntry as dictionary:")
+    print(json.dumps(dict_data, indent=2))

@@ -45,6 +45,7 @@ def validate_json_path(file_path: str) -> None:
         )
 
 
+
 class CallApp(BaseModel):
     records: CallLog = Field(
         ..., description="The CallLog records instance to be stored and manipulated"
@@ -53,7 +54,21 @@ class CallApp(BaseModel):
         default=None,
         description="Path to the JSON file which stores CallLog `records` instance",
     )
+    def add_record(self, record: CallEntry):
+        self.records.append(record)
+        self.save()
 
+    def remove_record(self, record_id: str):
+        self.records = [record for record in self.records if record.id != record_id]
+        self.save()
+
+    def update_record(self, record_id: str, new_record: CallEntry):
+        for i, record in enumerate(self.records):
+            if record.id == record_id:
+                self.records[i] = new_record
+                self.save()
+                break
+            
     def log_artifact(self, inputs: Union[aiAudio, str, aiImage, CallEntry]):
         if isinstance(inputs, aiAudio):
             self.log_audio(inputs)
@@ -124,6 +139,7 @@ class CallApp(BaseModel):
             clog = CallLog(call_records=data)
         new_app = cls(records=clog, json_path=json_path)
         return new_app
+
 
 
 from entries import toy_entry_dict

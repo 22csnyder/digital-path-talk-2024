@@ -91,6 +91,13 @@ I have no financial disclosures and no conflicts of interest to declare.
 
 ## Objectives
 
+1. Formative experience applying AI to pathology call
+2. Why AI will let anyone do informatics
+3. Demos applying AI to problems from real-world resident tenure
+4. Classification System for AI application 
+5. A few suggestions about the future
+
+<!-- 
 ### outline
 1.  Outline the mechanisms by which AI adapts and accelerates real world workflows *today* (from my tenor as a pathology resident)
 2.  Explain conceptually: how to anticipate when AI will be useful to apply to a particualr circumstance.
@@ -100,7 +107,7 @@ I have no financial disclosures and no conflicts of interest to declare.
 6.  Automate Call Log Entry via an AI Application. <!-- - entry of call metadata into the pathology resident call-log form from simulated call audio. -->
 ::: { .smaller .indent=2em}
 -   if time, show how an AI agent can be used to append, modify, save, query, analyze past log-entries.
--   if time, show easy integration with downstream informatic-endpoints e.g. email notification for impending sample expiration, ai entry summarization and report generation.
+-   if time, show easy integration with downstream informatic-endpoints e.g. email notification for impending sample expiration, ai entry summarization and report generation. -->
 
 
 ## Calibrating Perceptions of Informatics: *a prerequisite to discussing change*
@@ -267,34 +274,18 @@ data from <https://diorama.wustl.edu/weekly-report>
 | Economies of Scope | \-  enlisting adults<br>- Multi-disciplinary <br>[ - **learning from data**]{.fragment fragment-index="1"} |
 | Economies of Scale | \- cooperation <br>- minimum staffing, redundancy <br>[ - **automating tasks**]{.fragment fragment-index="1"} |
 
-## Communication Key to Efficiency
+## AI: Key to Efficiency
 
-- AI may result in removal of virtually all workflow inefficiencies 
-
--   By lowering the barrier working with computers, and by expanding the pool of practitioners who can do so, AI stands to remove essentially all present workflow inefficiencies
-
--   everything is worth the squeeze when you have a juicer
-<!-- -   *inefficiency*: gap between "knowing what to do" and "being done"
-
--   inefficiency can be reduced by communication with peers
-
--   Example: HMA (Hematologic Malignancy Algorithm)
-
-    -   extensive communication in advance with oncologists
-    -   streamlines adding molecular testing once indicated <!-- [hma algorithm](src/language/hma.png) -->
-
-<!-- -   Many inefficiencies are amenable to an informatics solution -->
-<!-- -   By lowering the barrier working with computers, and by expanding the pool of practitioners who can do so, AI stands to remove essentially all present workflow inefficiencies -->
+-  By lowering the barrier working with computers, and by expanding the pool of practitioners who can do so...
+-  AI most likely **will remove essentially all present operational inefficiencies** of today
+-  everything is worth the squeeze when you have a juicer
 
 
 
-# Overview of Current AI Methodologies
 
-## AI Tools For Computer Use
 
-::: notes
-these are my notes
-:::
+
+## AI-Informatic Approaches
 
 0.  task to code (by hand)
 
@@ -306,9 +297,21 @@ these are my notes
 
 ![](src/tools/aitools-flowchart-byhand.png){width="100%"}
 
-## Running Data Example: UDS Parse {.scrollable}
+## AI-Informatic Approaches
+0.  task to code (by hand)
+  -   tedious, "too literal": always requires 100% specification
+1.  task as prompt
+  -   easy, difficult to specify what you mean precisely enough
+2.  task to code
+  -   Can jumpstart coding, modifying easier than writing
+3.  code as prompt
+  -   sweet spot: clearly specifies what you want the output to "look like" while leaving the details to the model
 
-### Task: parse UDS screen results for positive patient+drugs resulted
+
+
+## UDS Parse {.scrollable}
+
+####  Task: parse UDS screen results for positive patient+drugs resulted
 
 <!-- [uds_notebook](http://localhost:8888/doc/tree/drugscreen_result_parsing.ipynb){preview-links=true} -->
 
@@ -489,72 +492,60 @@ uds_parse/drugscreen_result_parsing.ipynb
 
 ![](src/tools/uds-chatgpt-code-02b.png)
 
+[chatgpt uds task -> code](https://chatgpt.com/c/66faa511-42c4-8005-86c0-ae32a866b1b3){preview-link="true" style="text-align: center"}
+
+
 ## 3. Code as Prompt
 
 ![Coding without Rigid Rules](src/tools/uds-marvin-03.png)
 
-[chatgpt thread](https://chatgpt.com/c/66faa511-42c4-8005-86c0-ae32a866b1b3){preview-link="true" style="text-align: center"}
 
-## AI Tools For Computer Use (summary)
 
-::: notes
-these are my notes
-:::
 
-0.  task to code (by hand)
+# Suggestions
 
--   tedious, "too literal": always requires 100% specification
+## "low hanging fruit" for AI application
 
-1.  task as prompt
+- Flow lab dashboard
+  - make "pull" processes "push" processes
 
--   easy, difficult to specify what you mean precisely enough
 
-2.  task to code
+- Txfsn Service AI Assistant for inpatient
+  - logging, updating, retrieving, summarizing log info
+  - "Jarvis-like" interface 
+  - addtl functions:
+    - notifications
+    - auto rounds printouts
 
--   Can jumpstart coding, modifying easier than writing
-
-3.  code as prompt
-
--   sweet spot: clearly specifies what you want the output to "look like" while leaving the details to the model
-
-![](src/tools/aitools-flowchart-byhand.png){width="100%"}
-
-# Quick Development of Informatic Solutions
-
-## Flow lab dashboard
-
-## Txfsn Service AI Assistant
-
-# Recommendations
 
 <!-- ## Pursuit Angle -->
 
-## AI Recommendations Frameworks {.smaller}
+## Scales of Leadership {.smaller}
 
-:::::: columns
+::::: columns
 ::: {.column width="33%"}
 ### Tactical
-
 -   update specific lectures
--   add an elective
+-   ai elective
 :::
 
 ::: {.column width="33%"}
 ### Operational
-
--   gpt-playground
--   reward innovation by staff
+-   gpt-api part of onboarding
+-   safe environment for prototyping and learning
+-   incentivize process improvement
 :::
 
 ::: {.column width="33%"}
 ### Grand-Strategic
+-  what mentality or philosophy is most adaptive in the long-term?
+<!-- -   How to cope with change that is accelerating? -->
+<!-- -   What short term targets keep us relevant in the long-term? -->
 
--   How to cope with change that is accelerating?
--   What short term targets keep us relevant in the long-term?
 :::
-::::::
+:::::
 
-## 
+## trivia call-back
 
 <!-- ["Beast Mode"](src/pusuit_angle/BeastQuake720p.mp4) -->
 
@@ -566,45 +557,47 @@ Your browser does not support the video tag. </video>
 
 ## 
 
-![Alt text](src/pusuit_angle/ss_before.png)
+![](src/pusuit_angle/ss_before.png)
 
 ## 
 
-![Alt text](src/pusuit_angle/ss_after.png)
+![](src/pusuit_angle/ss_after.png)
 
 ## 
 
-![Alt text](src/pusuit_angle/ss_directly-chasing-the-ball.png)
+![](src/pusuit_angle/ss_directly-chasing-the-ball.png)
 
 ## 
 
-![Alt text](src/pusuit_angle/ss_slower-adopters-must-plan-farther-ahead.png)
+![](src/pusuit_angle/ss_slower-adopters-must-plan-farther-ahead.png)
 
-## Core Recommendation
 
-We should prepare for the future like it's already here. And, by the time we are ready, it will be.
+## Gist
 
-It is exactly because medicine will have the most obstacles to AI adoption that we need to plan the farthest ahead.
+* We should prepare for the future like it’s already here. And, by the time we are ready, it will be.
 
-## Specific Recommendations
+* It is exactly because medicine will have the most obstacles to AI adoption that we need to plan the farthest ahead.
 
-# Conclusions
+* Each *future* barrier to adoption makes less relevant the *present* technical limitations of AI
 
-a)  
 
-b)  
+## on free time
 
-## Return on Investment? [(of time)]{.smaller}
+#### The rate of return on an investment of your time is perhaps the highest ever
 
-::: notes
--   having free time is undervalued in medicine
--   like free money
--   how will you invest it?
-:::
+![](src/conclusion/xkcd_11th_grade.png)
 
-![](src/conclusion/xkcd_11th_grade.png) - comic from 15 years ago, more relevant than ever
 
-## How
+## Final Remarks
+|
+|
+### AI - The Peripheral Nervous System of the Laboratory
 
-:::::::::::::::::::::::::::
-:::::::::::::::::::::::::::
+- AI removes friction in informed decision making
+  - ease of information content appreciation
+  - more contextualized and timely process adaptation
+- decisions only as informed as access to information
+- most data not perceptible to the 5 senses
+
+
+## Thank you! 
