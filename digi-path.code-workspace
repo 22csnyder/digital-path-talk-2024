@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"emmet.useInlineCompletions": false,
+		"notebook.defaultFormatter": "ms-python.black-formatter",
+		"notebook.formatOnSave.enabled": true,
+		"python.analysis.autoFormatStrings": true,
+		"interactiveWindow.executeWithShiftEnter": true,
+		"jupyter.interactiveWindow.textEditor.executeSelection": true,
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"jupyter.exportWithOutputEnabled": true,
+		"jupyter.interactiveWindow.viewColumn": "beside",
+		"jupyter.interactiveWindow.textEditor.normalizeSelection": true,
+		"jupyter.interactiveWindow.creationMode": "perFile",
+		"jupyter.interactiveWindow.codeLens.enable": false,
+		"jupyter.interactiveWindow.codeLens.enableGotoCell": false
+	}
+}

@@ -2,6 +2,10 @@ yy#ignore env
 .env
 .reference/
 
+#just for inspect
+*.interactive
+
+
 # Ignore Quarto libraries
 # quarto/presentation_files/libs/
 */presentation_files/libs/
