@@ -8,7 +8,7 @@ from dash import Dash, html, dcc, callback, Output, Input
 app = Dash(__name__)
 
 
-text = dcc.Input(value="hello")
+text = dcc.Input(value="hello (replace me with 'Checklist')")
 user_input = html.Div()
 app.layout = html.Div([text, user_input])
 
